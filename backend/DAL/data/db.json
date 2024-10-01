@@ -1,0 +1,43 @@
+[
+  {
+    "userName": "12",
+    "password": "1234",
+    "id": "0827f6dd-142d-4061-9f1e-919d410a70a6"
+  },
+  {
+    "userName": "1trh2",
+    "password": "$2b$10$aUxjZjJXvs062FW0o1aqT.aLNA7fCIlZVr6be/obROLfcamhXlmpu",
+    "id": "9b67c57a-d245-47a1-933f-5d09c062db9e"
+  },
+  {
+    "userName": "1trh2",
+    "password": "$2b$10$6yW9S0AjBGozHI1dT4sXE.o/NQBW8x81aVqV3V4VwHPSaZTm9tmrq",
+    "id": "9f32b848-05b8-4fe6-b8c2-f82b32c88af2"
+  },
+  {
+    "userName": "1trh2",
+    "password": "$2b$10$.N43YX30nj9bOz6jhCpZse7ADacJOR6j2nRsQvL2F0AZ7TVM.BOLa",
+    "id": "23ab0d50-7cd3-494b-9c64-4017bb2536e0"
+  },
+  {
+    "userName": "1trh2",
+    "password": "$2b$10$sThZJeOmsGDD/H7l1lodXOw3i.GjZrE4Gcsl5fYTjI8DQ8egIGOdW",
+    "id": "428671db-86ab-4cf3-b25a-8067430b8f2c"
+  },
+  {
+    "userName": "shmuel",
+    "password": "$2b$10$xFGRMdq7oTCd/DSUNoAg.OqCLlFHtwC61hnqe0OsYdpm07y8w7IZ6",
+    "id": "09f8d870-0c0e-400e-a7a6-c8fe83cd0227",
+    "books": [
+      {
+        "id": 1,
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "publication_year": 1960,
+        "genre": ["Fiction", "Classic"],
+        "description": "A classic novel depicting racial injustice in the American South.",
+        "cover_image": "https://fakeimg.pl/667x1000/cc6600"
+      }
+    ]
+  }
+]

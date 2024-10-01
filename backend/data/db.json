@@ -1,0 +1,33 @@
+[
+  {
+      "userName": "johndoe",
+      "password": "password123",
+      "id": "1",
+      "firstName": "John",
+      "lastName": "Doe",
+      "image": "https://example.com/images/john.jpg"
+  },
+  {
+      "userName": "janedoe",
+      "password": "securepassword",
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "image": "https://example.com/images/jane.jpg"
+  },
+  {
+      "userName": "alice",
+      "password": "alicepassword",
+      "id": "3",
+      "firstName": "Alice",
+      "lastName": "Smith",
+      "image": "https://example.com/images/alice.jpg"
+  },
+  {
+      "userName": "bob",
+      "password": "bobpassword",
+      "firstName": "Bob",
+      "lastName": "Johnson",
+      "image": "https://example.com/images/bob.jpg"
+  }
+]
+
