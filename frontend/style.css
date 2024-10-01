@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  background-color: #f2f2f2;
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 8px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#game-board {
+  margin: 20px auto;
+  width: 180px;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border: 1px solid #000;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#game-history {
+  list-style-type: none;
+}
+
+#login-form,
+#game-page {
+  display: none;
+}
+
+#show-login,
+#show-register {
+  cursor: pointer;
+  color: blue;
+}
