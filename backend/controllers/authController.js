@@ -31,27 +31,44 @@ export const login = (req, res, next) => __awaiter(void 0, void 0, void 0, funct
         const user = req.body;
         const users = yield readFromJsonFile();
         const userFind = users.find((u) => u.userName === user.userName);
-        if (userFind && userFind.password == user.password) {
-            // bcrypt.compareSync(user.password, userFind.password)
-            const token = jwt.sign({ id: userFind.id, username: userFind.userName }, JWT_SECRET, { expiresIn: '1h' });
-            res.cookie('token', token, {
-                httpOnly: true,
-                secure: process.env.NODE_ENV === 'production',
-                maxAge: 3600000,
-                sameSite: 'strict',
-            });
-            res.send(token);
-            a(req.body.userName);
+        if (userFind && bcrypt.compareSync(user.password, userFind.password)) {
+            if (bcrypt.compareSync(user.password, userFind.password)) {
+                const token = jwt.sign({ id: userFind.id, username: userFind.userName }, JWT_SECRET, { expiresIn: '1h' });
+                res.cookie('token', token, {
+                    httpOnly: true,
+                    secure: process.env.NODE_ENV === 'production',
+                    maxAge: 3600000,
+                    sameSite: 'strict',
+                });
+                res.send(token);
+            }
+            else {
+                throw new Error("Password incorrect");
+            }
         }
         else {
-            throw new Error("Password incorrect");
+            throw new Error("user not found");
         }
     }
     catch (e) {
         next(e);
+        return null;
     }
 });
-function a(uderName) {
-    console.log("oufbbbbbbbbbbbbbbbbbb");
-    console.log(uderName);
-}
+export const getAllGamesOfUser = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const user = req.body;
+        const users = yield readFromJsonFile();
+        const userFind = users.find((u) => u.userName === user.userName);
+        if (userFind) {
+            const games = userFind.games;
+            if (!games) {
+                throw new Error("No games found");
+            }
+            res.send(games);
+        }
+    }
+    catch (e) {
+        res.status(500).send({ message: e });
+    }
+});

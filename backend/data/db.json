@@ -1,33 +1,24 @@
 [
   {
-      "userName": "johndoe",
-      "password": "password123",
-      "id": "1",
-      "firstName": "John",
-      "lastName": "Doe",
-      "image": "https://example.com/images/john.jpg"
+    "userName": "sh",
+    "password": "$2b$10$X3CwypY26Kcw.rdpfIfdy.FxAADcpflYUce9nLLYln.BRYHiqzMeS",
+    "id": "6c7c51b3-63a9-4066-b760-1ccf6b447937",
+    "games": [
+      {
+        "id": "6c7c51b3-63a9-4066-b760-1ccf6b447937",
+        "date": "2022-11-05T00:00:00.000Z",
+        "status": "xxx"
+      },
+      {
+        "id": "6c7c51b3-63a9-4066-b760-1ccf6b447937",
+        "date": "2022-11-05T00:00:00.000Z",
+        "status": "win"
+      }
+    ]
   },
   {
-      "userName": "janedoe",
-      "password": "securepassword",
-      "firstName": "Jane",
-      "lastName": "Doe",
-      "image": "https://example.com/images/jane.jpg"
-  },
-  {
-      "userName": "alice",
-      "password": "alicepassword",
-      "id": "3",
-      "firstName": "Alice",
-      "lastName": "Smith",
-      "image": "https://example.com/images/alice.jpg"
-  },
-  {
-      "userName": "bob",
-      "password": "bobpassword",
-      "firstName": "Bob",
-      "lastName": "Johnson",
-      "image": "https://example.com/images/bob.jpg"
+    "userName": "ff",
+    "password": "$2b$10$dxH8hJGT.kBDz5K8f9EPkeAI396NUi0tXfp1o53gA/d1cXd7hjKLa",
+    "id": "149b8c84-7a9b-404f-98c8-e9fff72bf90b"
   }
 ]
-
